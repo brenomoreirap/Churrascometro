@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Churrascômetro</title>
+</head>
+
+<body>
+    <h1>CHURRASCÔMETRO</h1>
+    <div class="wrapper" id="wrapper">
+        <label for="man" id="labelMan">
+            <img src="./img/man.png" alt="man icon">
+            <span>
+                <p>Homens:</p>
+                <input onclick="clickInput()" type="number" min="0" name="man" id="man">
+            </span>
+        </label>
+        <label for="woman" id="labelWoman">
+            <img src="./img/woman.png" alt="woman icon">
+            <span>
+                <p>Mulheres:</p>
+                <input onclick="clickInput()" type="number" min="0" name="woman" id="woman">
+            </span>
+        </label>
+        <label for="kid" id="labelKid">
+            <img src="./img/kid.png" alt="kids icon">
+            <span>
+                <p>Crianças:</p>
+                <input onclick="clickInput()" type="number" min="0" name="kid" id="kid">
+            </span>
+        </label>
+        <label for="duration" id="labelDuration">
+            <img src="./img/clock.png" alt="clock icon">
+            <span>
+                <p>Duração: (horas)</p>
+                <input onclick="clickInput()" type="number" min="0" name="duration" id="duration">
+            </span>
+        </label>
+        <button onclick="calculate()" id="button">Calcular</button>
+        <div id="res" class="hide">
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
